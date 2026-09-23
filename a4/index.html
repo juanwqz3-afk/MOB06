@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="atualizarPagamento()">
+
+    <div class="card">
+        <h2>Fechamento do Pedido</h2>
+        <p class="valor-base">Valor do Pedido: <strong>R$ 100,00</strong></p>
+        
+        <label for="forma-pagamento">Escolha a forma de pagamento:</label>
+        <select id="forma-pagamento" onchange="atualizarPagamento()">
+            <option value="pix">PIX (5% de desconto)</option>
+            <option value="cartao">Cartão de Crédito (Valor integral)</option>
+            <option value="dinheiro">Dinheiro (10% de desconto)</option>
+        </select>
+        
+        <div id="resultado" class="resultado-box">
+            <span id="mensagem-pagamento"></span>
+            <div class="valor-final">Total: R$ <span id="valor-total">0,00</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

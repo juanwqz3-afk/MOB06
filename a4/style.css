@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 340px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.valor-base {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.resultado-box {
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.valor-final {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+/* Cores dinâmicas para cada forma de pagamento */
+.pagamento-pix {
+    background-color: #e0f2f1;
+    color: #004d40;
+    border: 1px solid #b2dfdb;
+}
+
+.pagamento-cartao {
+    background-color: #eceff1;
+    color: #37474f;
+    border: 1px solid #cfd8dc;
+}
+
+.pagamento-dinheiro {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid #c8e6c9;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Carrinho de Compras</h2>
+        <p>Bola de Volei VP2000  - R$ 135.00</p>
+        
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" min="0" max="10" value="0" onchange="calcularTotal()">
+        
+        <div class="total-container">
+            <span>Total: R$ </span>
+            <span id="valor-total">0,00</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
